@@ -1,7 +1,9 @@
 services:
   - type: web
     name: openclaw
-    runtime: docker
+    runtime: image
+    image:
+      url: ghcr.io/openclaw/openclaw:latest
     plan: free
     healthCheckPath: /health
     envVars:
